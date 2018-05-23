@@ -4,7 +4,7 @@
 
        <!-- git remote add origin https://github.com/jmanzanf/Pruebas-moment-js.git
         git push -u origin master -->
-        
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,17 +14,32 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <script src="js/moment/moment.min.js" charset="UTF-8"></script>
+    <script src="js/moment/es.js" charset="UTF-8"></script>    
+
+    <script>    
+
+   
+        var momento = moment().locale('es');  
+        var hoy = moment();  
+        var fechaNac = moment("09-02-1979", "DD-MM-YYYY");     
+            
+        console.log(hoy.diff(fechaNac, 'years'));
+
+        
+
+
+    </script>
+
 </head>
 <body>
 
-    <h1>PRUEBAS CON MOMENT JS</h1>
+    <h1>PRUEBAS CON MOMENT JS</h1>   
 
     <script src="js/bootstrap/jquery.min.js" charset="UTF-8"></script>
     <script src="js/bootstrap/popper.min.js" charset="UTF-8"></script>
     <script src="js/bootstrap/bootstrap.min.js" charset="UTF-8"></script>
-    <script src="js/moment/moment.min.js" charset="UTF-8"></script>
-    <script src="js/moment/es.js" charset="UTF-8"></script>
-    
+   
     
 </body>
 </html>
