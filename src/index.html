@@ -18,16 +18,12 @@
     <script src="js/moment/es.js" charset="UTF-8"></script>    
 
     <script>    
-
    
         var momento = moment().locale('es');  
         var hoy = moment();  
         var fechaNac = moment("09-02-1979", "DD-MM-YYYY");     
             
-        console.log(hoy.diff(fechaNac, 'years'));
-
-        
-
+        console.log("La edad es: " + hoy.diff(fechaNac, 'years') + " años.");
 
     </script>
 
